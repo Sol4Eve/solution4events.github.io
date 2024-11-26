@@ -1,122 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.6">
-  <style type="text/css">
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution for Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            margin: 40px 0;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .contacts-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
+        .contact-box {
+            width: 45%;
+        }
+        .contact-box h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .contact-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-box li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .contact-box li a {
+            text-decoration: none;
+            color: black;
+        }
+        .contact-box li a:hover {
+            color: #ff5733;
+        }
+        .divider {
+            border-left: 2px solid black;
+            height: 100%;
+            margin: 0 40px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 20px;
+            font-size: 14px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;!DOCTYPE html&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;html lang="en"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;head&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Solution for Events&lt;/title&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Roboto', sans-serif;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>background-color: white;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>color: black;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin: 40px 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>header h1 {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 36px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>header p {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 18px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 10px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contacts-section {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: space-between;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px 40px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contact-box {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>width: 45%;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contact-box h2 {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 24px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contact-box ul {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>list-style: none;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contact-box li {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 16px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contact-box li a {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: none;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>color: black;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.contact-box li a:hover {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>color: #ff5733;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>.divider {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>border-left: 2px solid black;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>height: 100%;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 40px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>footer {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 40px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 20px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 14px;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>footer p {</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>}</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;/head&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;body&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;header&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Solution for Events&lt;/h1&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Our website is under development. Meanwhile, you can reach out to us through the following contacts:&lt;/p&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;/header&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;div class="contacts-section"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="contact-box"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;For Clients&lt;/h2&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Instagram: &lt;a href="https://instagram.com/solution_4_events" target="_blank"&gt;@solution_4_events&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Telegram: &lt;a href="https://t.me/+35679014911" target="_blank"&gt;+356 79 01 49 11&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;WhatsApp: &lt;a href="https://wa.me/+35679014911" target="_blank"&gt;+356 79 01 49 11&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Email: &lt;a href="mailto:oleksandr.s@solution4events.com" target="_blank"&gt;oleksandr.s@solution4events.com&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="divider"&gt;&lt;/div&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="contact-box"&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;For Staff&lt;/h2&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Instagram: &lt;a href="https://instagram.com/solution_4_events" target="_blank"&gt;@solution_4_events&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Telegram: &lt;a href="https://t.me/+35679606248" target="_blank"&gt;+356 79 60 62 48&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;WhatsApp: &lt;a href="https://wa.me/+35679606248" target="_blank"&gt;+356 79 60 62 48&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Email: &lt;a href="mailto:yana.h@solution4events.com" target="_blank"&gt;yana.h@solution4events.com&lt;/a&gt;&lt;/li&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;/div&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;footer&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;© 2024 Solution for Events. All rights reserved.&lt;/p&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;/footer&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px"><span class="s1"></span><br></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;/body&gt;</span></h1>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; font: 14.0px Arial; -webkit-text-stroke: #000000; background-color: #ffffff"><span class="s1">&lt;/html&gt;</span></h1>
+
+<header>
+    <h1>Solution for Events</h1>
+    <p>Our website is under development. Meanwhile, you can reach out to us through the following contacts:</p>
+</header>
+
+<div class="contacts-section">
+    <div class="contact-box">
+        <h2>For Clients</h2>
+        <ul>
+            <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
+            <li>Telegram: <a href="https://t.me/+35679014911" target="_blank">+356 79 01 49 11</a></li>
+            <li>WhatsApp: <a href="https://wa.me/+35679014911" target="_blank">+356 79 01 49 11</a></li>
+            <li>Email: <a href="mailto:oleksandr.s@solution4events.com" target="_blank">oleksandr.s@solution4events.com</a></li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="contact-box">
+        <h2>For Staff</h2>
+        <ul>
+            <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
+            <li>Telegram: <a href="https://t.me/+35679606248" target="_blank">+356 79 60 62 48</a></li>
+            <li>WhatsApp: <a href="https://wa.me/+35679606248" target="_blank">+356 79 60 62 48</a></li>
+            <li>Email: <a href="mailto:yana.h@solution4events.com" target="_blank">yana.h@solution4events.com</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Solution for Events. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
