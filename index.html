@@ -11,7 +11,12 @@
             background-color: white;
             color: black;
             margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1; /* Заповнює доступний простір між хедером і футером */
         }
         header {
             text-align: center;
@@ -71,9 +76,7 @@
             text-align: center;
             padding: 20px;
             font-size: 14px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background-color: #f9f9f9;
         }
         footer p {
             margin: 0;
@@ -99,34 +102,36 @@
     <p>Our website is under development. Meanwhile, you can reach out to us through the following contacts:</p>
 </header>
 
-<div class="contacts-section">
-    <!-- For Clients Section -->
-    <div class="contact-box">
-        <h2>For Clients</h2>
-        <ul>
-            <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
-            <li>Telegram: <a href="https://t.me/+35679014911" target="_blank">+356 79 01 49 11</a></li>
-            <li>WhatsApp: <a href="https://wa.me/+35679014911" target="_blank">+356 79 01 49 11</a></li>
-            <li>Email: <a href="mailto:oleksandr.s@solution4events.com" target="_blank">oleksandr.s@solution4events.com</a></li>
-        </ul>
-    </div>
+<main>
+    <div class="contacts-section">
+        <!-- For Clients Section -->
+        <div class="contact-box">
+            <h2>For Clients</h2>
+            <ul>
+                <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
+                <li>Telegram: <a href="https://t.me/+35679014911" target="_blank">+356 79 01 49 11</a></li>
+                <li>WhatsApp: <a href="https://wa.me/+35679014911" target="_blank">+356 79 01 49 11</a></li>
+                <li>Email: <a href="mailto:oleksandr.s@solution4events.com" target="_blank">oleksandr.s@solution4events.com</a></li>
+            </ul>
+        </div>
 
-    <!-- Divider (Central Line) -->
-    <div class="divider-container">
-        <div class="divider"></div>
-    </div>
+        <!-- Divider (Central Line) -->
+        <div class="divider-container">
+            <div class="divider"></div>
+        </div>
 
-    <!-- For Staff Section -->
-    <div class="contact-box">
-        <h2>For Staff</h2>
-        <ul>
-            <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
-            <li>Telegram: <a href="https://t.me/+35679606248" target="_blank">+356 79 60 62 48</a></li>
-            <li>WhatsApp: <a href="https://wa.me/+35679606248" target="_blank">+356 79 60 62 48</a></li>
-            <li>Email: <a href="mailto:yana.h@solution4events.com" target="_blank">yana.h@solution4events.com</a></li>
-        </ul>
+        <!-- For Staff Section -->
+        <div class="contact-box">
+            <h2>For Staff</h2>
+            <ul>
+                <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
+                <li>Telegram: <a href="https://t.me/+35679606248" target="_blank">+356 79 60 62 48</a></li>
+                <li>WhatsApp: <a href="https://wa.me/+35679606248" target="_blank">+356 79 60 62 48</a></li>
+                <li>Email: <a href="mailto:yana.h@solution4events.com" target="_blank">yana.h@solution4events.com</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+</main>
 
 <footer>
     <p>© 2024 Solution for Events. All rights reserved.</p>
