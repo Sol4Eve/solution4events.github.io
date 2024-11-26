@@ -82,15 +82,25 @@
             margin: 0;
         }
         @media (max-width: 768px) {
+            body {
+                padding: 0 20px; /* Додатковий відступ для мобільних пристроїв */
+            }
+            header p {
+                margin: 20px 0;
+                padding: 0 60px; /* Відступ тексту від бокових полів */
+                text-align: justify;
+            }
             .contacts-section {
                 flex-direction: column;
+                gap: 40px; /* Відстань між секціями */
+                margin-bottom: 20px; /* Для зменшення вертикального скролу */
+            }
+            .contact-box {
+                width: 100%;
+                margin: 0 auto;
             }
             .divider {
                 display: none;
-            }
-            .contact-box {
-                width: 90%;
-                margin: 20px 0;
             }
         }
     </style>
