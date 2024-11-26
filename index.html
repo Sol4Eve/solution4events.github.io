@@ -56,10 +56,10 @@
         }
         .contact-box li a {
             text-decoration: none;
-            color: black;
+            color: #0066CC; /* Встановлює колір посилань */
         }
         .contact-box li a:hover {
-            color: #ff5733;
+            color: #ff5733; /* Колір при наведенні */
         }
         .divider-container {
             display: flex;
@@ -75,7 +75,8 @@
             padding: 20px;
             font-size: 14px;
             background-color: #f9f9f9;
-            margin: 0;
+            width: 100%; /* Розтягує футер на всю ширину */
+            box-sizing: border-box;
         }
         footer p {
             margin: 0;
@@ -100,6 +101,9 @@
             }
             .divider {
                 display: none;
+            }
+            footer {
+                margin: 0; /* Футер без бокових відступів */
             }
         }
     </style>
