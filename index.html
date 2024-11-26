@@ -13,19 +13,18 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Центрування по горизонталі */
-            justify-content: center; /* Центрування по вертикалі */
             min-height: 100vh;
+        }
+        main {
+            flex: 1; /* Заповнює доступний простір між хедером і футером */
         }
         header {
             text-align: center;
-            margin: 30px 0;
+            margin: 30px 0 30px;
         }
         header img {
             width: 300px;
             height: auto;
-            display: block;
-            margin: 0 auto; /* Центрування логотипа */
         }
         header p {
             font-size: 18px;
@@ -35,30 +34,52 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* Відстань між секціями */
-            margin: 20px 0;
-            width: 100%;
+            padding: 20px 0;
         }
         .contact-box {
-            width: 45%; /* Секції однакової ширини */
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
             text-align: center;
+            margin: 0 100px; /* Відстань між блоками і центральною лінією */
+        }
+        .contact-box h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .contact-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-box li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .contact-box li a {
+            text-decoration: none;
+            color: black;
+        }
+        .contact-box li a:hover {
+            color: #ff5733;
         }
         .divider-container {
             display: flex;
+            justify-content: center;
             align-items: center;
         }
         .divider {
             border-left: 2px solid black;
             height: 150px;
-            margin: 0 auto; /* Центрування чорної лінії */
         }
         footer {
             text-align: center;
             padding: 20px;
             font-size: 14px;
             background-color: #f9f9f9;
+            margin: 0; /* Прибрано зовнішні відступи */
             width: 100%; /* Розтягує футер на всю ширину */
-            box-sizing: border-box;
+            box-sizing: border-box; /* Враховує padding у ширину */
         }
         footer p {
             margin: 0;
@@ -73,7 +94,7 @@
             }
             .contacts-section {
                 flex-direction: column;
-                gap: 20px;
+                gap: 20px !important; /* Встановлено відстань між секціями в 20 пікселів */
                 margin-bottom: 20px;
             }
             .contact-box {
