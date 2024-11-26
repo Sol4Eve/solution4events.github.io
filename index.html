@@ -20,7 +20,7 @@
         }
         header {
             text-align: center;
-            margin: 40px 0 30px;
+            margin: 30px 0 30px;
         }
         header img {
             width: 300px;
@@ -28,7 +28,7 @@
         }
         header p {
             font-size: 18px;
-            margin-top: 20px;
+            margin: 10px 0;
         }
         .contacts-section {
             display: flex;
@@ -77,23 +77,23 @@
             padding: 20px;
             font-size: 14px;
             background-color: #f9f9f9;
+            margin: 0; /* Прибрано відступи футера */
         }
         footer p {
             margin: 0;
         }
         @media (max-width: 768px) {
             body {
-                padding: 0 20px; /* Додатковий відступ для мобільних пристроїв */
+                padding: 0 20px; /* Зменшення відступу до 20 пікселів */
             }
             header p {
-                margin: 20px 0;
-                padding: 0 60px; /* Відступ тексту від бокових полів */
-                text-align: justify;
+                margin: 10px 0;
+                text-align: center; /* Вирівнювання тексту по центру */
             }
             .contacts-section {
                 flex-direction: column;
-                gap: 40px; /* Відстань між секціями */
-                margin-bottom: 20px; /* Для зменшення вертикального скролу */
+                gap: 30px; /* Встановлено відстань між секціями в 30 пікселів */
+                margin-bottom: 20px;
             }
             .contact-box {
                 width: 100%;
@@ -102,6 +102,9 @@
             .divider {
                 display: none;
             }
+            footer {
+                margin: 0; /* Футер без бокових відступів */
+            }
         }
     </style>
 </head>
@@ -109,7 +112,8 @@
 
 <header>
     <img src="logo.png" alt="Solution for Events Logo">
-    <p>Our website is under development. Meanwhile, you can reach out to us through the following contacts:</p>
+    <p>Our website is under development.</p>
+    <p>Meanwhile, you can reach out to us through the following contacts:</p>
 </header>
 
 <main>
