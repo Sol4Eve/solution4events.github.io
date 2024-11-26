@@ -18,7 +18,7 @@
             margin: 40px 0 30px;
         }
         header img {
-            width: 300px; /* Обмеження ширини логотипа */
+            width: 300px;
             height: auto;
         }
         header p {
@@ -30,22 +30,23 @@
             justify-content: center;
             align-items: center;
             padding: 20px 0;
+            gap: 150px; /* Відстань між секціями */
         }
         .contact-box {
             width: 45%;
+            max-width: 400px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            text-align: center;
         }
         .contact-box h2 {
             font-size: 24px;
             margin-bottom: 15px;
-            text-align: center;
         }
         .contact-box ul {
             list-style: none;
             padding: 0;
-            text-align: center;
         }
         .contact-box li {
             font-size: 16px;
@@ -62,25 +63,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
         }
         .divider {
             border-left: 2px solid black;
-            height: 150px; /* Висота лінії */
-        }
-        .spacer {
-            width: 150px; /* Відстань між секціями та лінією */
+            height: 150px;
         }
         footer {
             text-align: center;
             padding: 20px;
             font-size: 14px;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
         footer p {
             margin: 0;
+        }
+        @media (max-width: 768px) {
+            .contacts-section {
+                flex-direction: column;
+                gap: 50px;
+            }
+            .divider {
+                display: none;
+            }
+            .contact-box {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -93,7 +102,7 @@
 
 <div class="contacts-section">
     <!-- For Clients Section -->
-    <div class="contact-box" style="margin-right: 150px;">
+    <div class="contact-box">
         <h2>For Clients</h2>
         <ul>
             <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
@@ -105,11 +114,11 @@
 
     <!-- Divider (Central Line) -->
     <div class="divider-container">
-        <div class="divider"></div> <!-- Чорна лінія по центру -->
+        <div class="divider"></div>
     </div>
 
     <!-- For Staff Section -->
-    <div class="contact-box" style="margin-left: 150px;">
+    <div class="contact-box">
         <h2>For Staff</h2>
         <ul>
             <li>Instagram: <a href="https://instagram.com/solution_4_events" target="_blank">@solution_4_events</a></li>
